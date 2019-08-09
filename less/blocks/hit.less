@@ -1,0 +1,165 @@
+.hit {
+  position: relative;
+  z-index: 5;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  top: 10px;
+  background-color: rgb(248, 248, 248);
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  outline: none;
+  
+  &:hover,
+  &:active {
+    background-color: @yellow;
+  }
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  right: 40px;
+  left: auto;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.hit__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 240px;
+  height: auto;
+  padding: 15px 10px;
+  margin-bottom: 125px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  
+  &:hover {
+    margin-bottom: 0;
+    border-color: @hover;
+    box-shadow: 0px 16px 40px 0px rgba(154, 154, 154, 0.24);
+    
+    .hit__click {
+      display: block;
+    }
+  }
+}
+
+.hit__articul {
+  margin: 0;
+  font-size: 14px;
+  color: #b2b3b5;
+}
+
+.hit__link {
+  &:hover,
+  &:active {
+    .hit__title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hit__img {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+  }
+}
+
+.hit__title {
+  margin-top: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.hit__price {
+  color: #e24d0b;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  
+  span {
+    position: relative;
+    padding-right: 30px;
+    line-height: 1;
+  }
+  
+  i {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+
+.hit__brand {
+  color: #b2b3b5;
+  font-size: 14px;
+  text-align: center;
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.hit__click {
+  padding-top: 10px;
+  display: none;
+}
+
+.hit__value {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hit__input {
+  display: block;
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: #2c2c2c;
+  border: 1px solid rgb(248, 248, 248);
+}
+
+.hit__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 1;
+  color: #2c2c2c;
+  background-color: rgb(248, 248, 248);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @yellow;
+    .transition();
+  }
+}
+
+.hit__form {
+  margin-top: auto;
+}
