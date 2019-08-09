@@ -1,0 +1,29 @@
+.menu {
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+}
+
+.menu__item {
+  &:hover,
+  &:active {
+    .menu__link {
+      color: #5f5f5f;
+      background-color: @yellow;
+      .transition();
+    }
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  .transition();
+}

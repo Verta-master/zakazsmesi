@@ -1,0 +1,24 @@
+.nav__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav__item {
+  margin-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  &:hover a,
+  &:active a,
+  &--active a {
+    text-decoration: none;
+  }
+}
