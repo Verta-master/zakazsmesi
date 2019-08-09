@@ -1,0 +1,21 @@
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  span {
+    position: relative;
+    z-index: 2;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 16px;
+      background-color: rgb(255, 228, 1);
+    }
+  }
+}
