@@ -1,6 +1,11 @@
 .hit {
   position: relative;
   z-index: 5;
+  
+  &--new {
+    z-index: 4;
+    margin-bottom: 30px;
+  }
 }
 
 .swiper-button-next,
@@ -162,4 +167,67 @@
 
 .hit__form {
   margin-top: auto;
+}
+
+.hit__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -20px;
+}
+
+.hit__item {
+  position: relative;
+  z-index: 2;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 240px;
+  height: auto;
+  padding: 15px 10px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  
+  .hit__click {
+    position: absolute;
+    z-index: 100;
+    top: ~"calc(100% - 15px)";
+    left: -2px;
+    right: -2px;
+    padding: 15px 10px;
+    padding-top: 10px;
+    background-color: #fff;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 16px 40px 0px rgba(154, 154, 154, 0.24);
+    opacity: 0;
+  }
+  
+  &:hover {
+    z-index: 100;
+    border-color: @hover;
+    border-bottom: 2px solid rgba(255,255,255,0);
+    
+    .hit__click {
+      display: block;
+      border: 2px solid @hover;
+      border-top: 0;
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
 }
