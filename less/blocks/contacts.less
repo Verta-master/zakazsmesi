@@ -10,8 +10,8 @@
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
-  justify-content: center;
-  padding: 30px 25px;
+  padding: 32px 27px;
+  padding-right: 0;
   background-image: url(../img/images/bg-menu.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -19,7 +19,7 @@
 
 .contacts__info {
   position: relative;
-  width: 33%;
+  width: 33.33%;
   padding-left: 32px;
   
   span {
@@ -41,11 +41,19 @@
   &--time::before {
     background-image: url(../img/icons/clock.svg);
   }
-  &--mail::before {
-    background-image: url(../img/icons/envelope.svg);
+  &--mail {
+    width: 30%;
+    
+    &::before {
+      background-image: url(../img/icons/envelope.svg);
+    }
   }
-  &--tel::before {
-    background-image: url(../img/icons/call-answer.svg);
+  &--tel {
+    width: 31%;
+    
+    &::before {
+      background-image: url(../img/icons/call-answer.svg);
+    }
   }
 }
 
