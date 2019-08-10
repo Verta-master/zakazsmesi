@@ -8,6 +8,9 @@
     z-index: 4;
     margin-bottom: 30px;
   }
+  &:hover {
+    z-index: 200;
+  }
 }
 
 .swiper-button-next,
@@ -39,6 +42,8 @@
 }
 
 .hit__slide {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,12 +56,14 @@
   box-sizing: border-box;
   
   &:hover {
+    z-index: 200;
     margin-bottom: 0;
     border-color: @hover;
     box-shadow: 0px 16px 40px 0px rgba(154, 154, 154, 0.24);
     
     .hit__click {
       display: block;
+      z-index: 200;
     }
   }
 }
@@ -132,6 +139,8 @@
 }
 
 .hit__click {
+  position: relative;
+  z-index: 5;
   padding-top: 10px;
   display: none;
 }

@@ -236,7 +236,7 @@
             </nav>
 
             <a href="#" class="banner">
-
+              <img src="img/images/banner.jpg" alt="Banner">
             </a>
           </aside>
 
@@ -404,31 +404,49 @@
               <div class="swiper-container brand__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-1.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-1.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-2.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-2.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-3.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-3.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-4.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-4.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-5.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-5.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-1.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-1.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-2.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-2.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-1.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-1.png" alt="Производители">
+                    </a>
                   </div>
                   <div class="swiper-slide brand__slide">
-                    <img src="img/images/logo-2.png" alt="Производители">
+                    <a href="#" class="brand__link">
+                      <img src="img/images/logo-2.png" alt="Производители">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -864,6 +882,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -877,6 +896,29 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 15,
+      breakpoints: 
+				{
+					1410: 
+					{
+						slidesPerView: 4,
+					},
+          1278:
+          {
+            slidesPerView: 3,
+          },
+          1022:
+          {
+            slidesPerView: 3,
+          },
+          766:
+          {
+            slidesPerView: 2,
+          },
+          480:
+          {
+            slidesPerView: 1,
+          },
+        },
     });
     
     var mySwiper = new Swiper ('.brand__slider', {
@@ -889,6 +931,29 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 15,
+      breakpoints: 
+				{
+					1410: 
+					{
+						slidesPerView: 4,
+					},
+          1278:
+          {
+            slidesPerView: 3,
+          },
+          1022:
+          {
+            slidesPerView: 3,
+          },
+          766:
+          {
+            slidesPerView: 2,
+          },
+          480:
+          {
+            slidesPerView: 1,
+          }
+        },
     });
   </script>
 </body>
