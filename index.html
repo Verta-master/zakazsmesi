@@ -7,6 +7,7 @@
   <title>ZakazSmesi</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -44,7 +45,7 @@
             </div>
           </div>
           <div class="header__cabinet">
-            <a href="#">Личный кабинет</a>
+            <a data-fancybox="" data-src="#login" href="javascript:;">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -675,7 +676,7 @@
                         <input type="text" class="hit__input" value="1">
                         <button type="button" class="hit__btn hit__btn--plus">+</button>
                       </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      <a data-fancybox="" data-src="#click" href="javascript:;" class="btn hit__click-btn">Купить в один клик</a>
                     </div>
                   </form>
                 </li>
@@ -807,7 +808,7 @@
         </a>
       </li>
       <li class="block__item block__item--hidden">
-        <a href="#" class="block__link">
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="block__link">
           <figure class="block__icon">
             <img src="img/icons/call-answer-black.svg" alt="заказать звонок">
           </figure>
@@ -880,8 +881,87 @@
     </div>
   </footer>
   
+  <!-- Modal windows -->
+  <div style="display: none;" id="login" class="modal">
+    <p class="modal__title">Войти в личный кабинет</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Введите e-mail, телефон или логин">
+      <input type="password" class="form__input" placeholder="Введите пароль">
+      <div class="form__wrap">
+        <a href="#" class="form__question">Забыли пароль?</a>
+        <a href="#">Регистрация</a>
+      </div>
+      <button type="submit" class="btn form__btn">Войти в личный кабинет</button>
+      <input type="checkbox" id="check" class="form__checkbox">
+      <label for="check" class="form__check">Запомнить меня</label>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="reg" class="modal">
+    <p class="modal__title">Регистрация в личном кабинет</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Введите e-mail, телефон или логин">
+      <input type="tel" class="form__input" placeholder="Ваш телефон">
+      <input type="password" class="form__input" placeholder="Введите пароль">
+      <input type="password" class="form__input" placeholder="Повторите пароль">
+      <button type="submit" class="btn form__btn">Зарегистрироваться</button>
+      <p class="form__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных».</a></p>
+    </form>
+  </div>
+ 
+  <div style="display: none;" id="password" class="modal">
+    <p class="modal__title">Восстановить пароль</p>
+    <form action="#" class="form">
+      <input type="email" class="form__input" placeholder="Введите вашу почту">
+      <button type="submit" class="btn form__btn">Восстановить пароль</button>
+      <p class="form__comment">Нажимая на кнопку «Восстановить пароль», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных».</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Как вас зовут?">
+      <input type="tel" class="form__input" placeholder="Ваш номер телефона">
+      <button type="submit" class="btn form__btn">Отправить</button>
+      <p class="form__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных».</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="click" class="modal">
+    <p class="modal__title">Купить в один клик</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Как вас зовут?">
+      <input type="tel" class="form__input" placeholder="Ваш номер телефона">
+      <button type="submit" class="btn form__btn">Отправить</button>
+      <p class="form__comment">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных в соответствии с <a href="#">«Политикой в области обработки и защиты персональных данных».</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="info1" class="modal">
+    <div class="modal__info">
+      <p class="modal__ready">Готово!</p>
+      <p>Ожидайте звонка Вашего менеджера – он поможет совершить покупку.</p>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="info2" class="modal">
+    <div class="modal__info">
+      <p class="modal__ready">Готово!</p>
+      <p>Мы отправили письмо с инструкцией для восстановления пароля на вашу почту.</p>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="info3" class="modal">
+    <div class="modal__info">
+      <p class="modal__ready">Готово!</p>
+      <p>Спасибо за ваше обращение! Через 2 минуты наш менеджер свяжется с вами для решения вашего вопроса.</p>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/script.js"></script>
   
   <!-- Sliders -->
