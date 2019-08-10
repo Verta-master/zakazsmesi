@@ -3,6 +3,7 @@
 }
 
 .banner {
+  display: block;
   margin-bottom: 35px;
   .transition();
   
@@ -15,4 +16,123 @@
     box-shadow: 0px 16px 40px 0px rgba(154, 154, 154, 0.24);
     .transition();
   }
+}
+
+.sidebar__leaders {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 295px;
+    height: 25px;
+    margin-top: 0;
+    right: auto;
+    left: 50%;
+    background-color: rgba(255,255,255,0);
+    border: 1px solid rgb(226, 226, 226);
+    background-image: url(../img/icons/next-up.png);
+    background-size: 14px 7px;
+    
+    &:hover,
+    &:active {
+      background-color: @yellow;
+    }
+  }
+  .swiper-button-next {
+    bottom: 15px;
+    top: auto;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  .swiper-button-prev {
+    top: 50px;
+    transform: translateX(-50%);
+  }
+}
+
+.sidebar__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sidebar__slider {
+  width: 100%;
+  height: 680px;
+}
+
+.sidebar__slide {
+  width: 100%;
+  height: 220px;
+  padding: 15px 30px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  &:hover {
+    .sidebar__btn {
+      opacity: 1;
+      .transition();
+    }
+  }
+}
+
+.sidebar__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  
+  img {
+    display: block;
+    height: 100px;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.sidebar__price {
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  color: #e24d0b;
+  
+  span {
+    position: relative;
+    padding-right: 30px;
+  }
+  i {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-size: 10px;
+    font-style: normal;
+  }
+}
+
+.sidebar__btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  padding-left: 15px;
+  font-weight: 500;
+  background-image: url(../img/icons/shopping-cart.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: left 40px center;
+  opacity: 0;
 }

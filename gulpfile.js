@@ -78,7 +78,7 @@ gulp.task('js:del', function(done) {
 gulp.task('js:libraries', function(done) {
   return gulp.src('js/*.js')
     .pipe(plumber())
-    .pipe(uglify())
+//    .pipe(uglify())
     .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
     done();
@@ -90,7 +90,7 @@ gulp.task('js:scripts', function(done) {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('build/js'))
+//    .pipe(gulp.dest('build/js'))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename('main.min.js'))
