@@ -1,0 +1,41 @@
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.page__text {
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @hover;
+    .transition();
+  }
+}
+
+.pages__link {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(248, 248, 248);
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #fff;
+    background-color: @yellow;
+    border-color: @yellow;
+    .transition();
+  }
+}
