@@ -248,7 +248,7 @@
                 <a href="#" class="sort__link sort__link--active">Цене</a>
                 <a href="#" class="sort__link">Наименованию товара</a>
               </div>
-              <div class="sort__block">
+              <div class="sort__block sort__block--type">
                 <span>Вид каталога:</span>
                 <button type="button" class="sort__btn sort__btn--plate sort__btn--active">
                   <svg x="0px" y="0px" width="267.574px" height="267.573px" viewBox="0 0 267.574 267.573" style="enable-background:new 0 0 267.574 267.573;" xml:space="preserve">
@@ -276,7 +276,7 @@
             </div>
 
             <section class="hit">
-              <ul class="hit__list">
+              <ul class="hit__list hit__catalog">
                 <li class="hit__item">
                   <p class="hit__articul">Арт.: 892378</p>
                   <a href="#" class="hit__link">
@@ -1068,6 +1068,22 @@
       preventClicksPropagation: false,
       slidesPerView: 3,
       spaceBetween: 10,
+    });
+  </script>
+  
+  <!-- Catalog view switcher -->
+  <script>
+    $('.sort__btn--table').click(function(e) {
+      e.preventDefault();
+      $('.sort__btn--plate').removeClass('sort__btn--active');
+      $(this).addClass('sort__btn--active');
+      $('.hit__catalog').addClass('hit__list--table');
+    });
+    $('.sort__btn--plate').click(function(e) {
+      e.preventDefault();
+      $('.sort__btn--table').removeClass('sort__btn--active');
+      $(this).addClass('sort__btn--active');
+      $('.hit__catalog').removeClass('hit__list--table');
     });
   </script>
 </body>
