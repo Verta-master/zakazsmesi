@@ -247,3 +247,80 @@
     }
   }
 }
+
+.hit__list--table {
+  margin-right: 0;
+  
+  .hit__item {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin-right: 0;
+    padding-left: 225px;
+    padding-right: 225px;
+    justify-content: space-between;
+    
+    &:hover {
+      border-bottom: 2px solid @hover;
+      
+      .hit__click {
+        border: 0;
+      }
+    }
+  }
+  .hit__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 15px;
+  }
+  .hit__click {
+    display: block;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 225px;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 15px;
+  }
+  .hit__cart {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    width: 210px;
+    order: 3;
+  }
+  .hit__title {
+    text-align: left;
+    padding-right: 10px;
+  }
+  .hit__brand {
+    text-align: left;
+    order: 1;
+    
+  }
+  .hit__price {
+    text-align: left;
+    order: 2;
+    margin-top: auto;
+  }
+  .hit__form {
+    margin-top: 0;
+    flex-grow: 1;
+  }
+  .hit__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .hit__articul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .hit__title {
+    margin-bottom: 0;
+  }
+}

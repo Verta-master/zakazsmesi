@@ -4,7 +4,7 @@
 
 .banner {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   .transition();
   
   img {
@@ -21,7 +21,7 @@
 .sidebar__leaders {
   position: relative;
   margin-bottom: 30px;
-  padding: 15px 10px;
+  padding: 20px 10px;
   padding-bottom: 50px;
   background-color: #f8f8f8;
   
@@ -48,7 +48,7 @@
     transform: translateX(-50%) rotate(180deg);
   }
   .swiper-button-prev {
-    top: 50px;
+    top: 60px;
     transform: translateX(-50%);
   }
 }
@@ -63,12 +63,12 @@
 
 .sidebar__slider {
   width: 100%;
-  height: 680px;
+  height: 740px;
 }
 
 .sidebar__slide {
   width: 100%;
-  height: 220px;
+//  height: 240px;
   padding: 15px 30px;
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
@@ -93,15 +93,21 @@
   img {
     display: block;
     height: 100px;
+    margin-bottom: 10px;
   }
   
   &:hover,
   &:active {
     text-decoration: underline;
   }
+  
+  span {
+    max-width: 100%;
+  }
 }
 
 .sidebar__price {
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: 20px;
   line-height: 1;

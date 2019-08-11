@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   padding: 20px 30px;
   font-size: 14px;
   background-color: #f8f8f8;
@@ -14,7 +14,7 @@
 
 .sort__link {
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
   padding-right: 30px;
   color: #898989;
   
@@ -30,8 +30,10 @@
     background-size: contain;
   }
   
+  &:hover,
+  &:active,
   &--active {
-    color: @hover;
+    color: @yellow;
     
     &::after {
       background-image: url(../img/icons/sort.svg);
@@ -52,6 +54,8 @@
     fill: #afafaf;
   }
   
+  &:hover svg,
+  &:active svg,
   &--active svg {
     fill: @hover;
   }
