@@ -726,6 +726,7 @@ a.contacts__data:active {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: left 30px center;
+  cursor: pointer;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1055,6 +1056,9 @@ a.contacts__data:active {
   width: 100%;
   margin-bottom: 35px;
   background-color: #f8f8f8;
+}
+.menu--internal {
+  display: none;
 }
 .menu__list {
   margin: 0;
@@ -1659,7 +1663,6 @@ a.contacts__data:active {
 .brand {
   position: relative;
   z-index: 10;
-  margin-top: -100px;
   margin-bottom: 40px;
 }
 .brand__slide {
@@ -2616,6 +2619,14 @@ a.breadcrumbs__link:active {
     width: 100%;
     min-width: auto;
   }
+  .menu--open {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 500;
+  }
   .columns__content {
     width: 100%;
   }
@@ -2808,6 +2819,9 @@ a.breadcrumbs__link:active {
   .sort__block--type {
     display: none;
   }
+  .menu--open {
+    top: 300px;
+  }
 }
 @media (max-width: 480px) {
   .footer__wrap .nav,
@@ -2881,5 +2895,8 @@ a.breadcrumbs__link:active {
   }
   .title-2 {
     font-size: 20px;
+  }
+  .menu--open {
+    top: 425px;
   }
 }
