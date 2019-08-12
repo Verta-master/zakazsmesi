@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -234,514 +233,152 @@
   <main>
     <div class="columns">
       <div class="wrapper">
+        <nav class="breadcrumbs">
+          <a href="index.html" class="breadcrumbs__link breadcrumbs__link--main"></a>
+          <a href="#" class="breadcrumbs__link">Категория</a>
+          <a href="#" class="breadcrumbs__link">Подкатегория</a>
+          <span class="breadcrumbs__link">Название товара</span>
+        </nav>
+       
         <div class="columns__blocks">
-          <aside class="sidebar">
-            <div class="filter">
-              <p class="filter__title">Фильтр по параметрам</p>
-              <form action="#" class="form filter__form">
-                <div class="filter__form-wrap">
-                  <fieldset class="form__field">
-                    <p class="filter__option">Артикул</p>
-                    <div class="filter__drop">
-                      <input type="text" class="form__input" placeholder="Например, 234234">
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <p class="filter__option">Розничная цена</p>
-                    <div class="filter__drop">
-                      <div class="filter__wrap">
-                        <span>От</span>
-                        <input type="text" id="amount-min" class="filter__input">
-                        <span>-</span>
-                        <input type="text" id="amount-max" class="filter__input">
-                        <span>руб.</span>
-                      </div>
-                      <div class="filter__range">
-                        <div id="slider-range"></div>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <p class="filter__option">Производитель</p>
-                    <div class="filter__drop">
-                      <input type="checkbox" id="check1" class="form__checkbox">
-                      <label for="check1" class="form__check">Ceresit</label>
-                      <input type="checkbox" id="check2" class="form__checkbox" checked="">
-                      <label for="check2" class="form__check">X-Glass</label>
-                      <input type="checkbox" id="check3" class="form__checkbox">
-                      <label for="check3" class="form__check">Волма</label>
-                      <input type="checkbox" id="check4" class="form__checkbox">
-                      <label for="check4" class="form__check">Master Klein</label>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <p class="filter__option filter__option--open">Цвет</p>
-                    <div class="filter__drop">
-                      <input type="checkbox" id="check5" class="form__checkbox">
-                      <label for="check5" class="form__check">Цвет 1</label>
-                      <input type="checkbox" id="check6" class="form__checkbox">
-                      <label for="check6" class="form__check">Цвет 2</label>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <p class="filter__option">Фактура</p>
-                    <div class="filter__drop">
-                      <input type="checkbox" id="check7" class="form__checkbox">
-                      <label for="check7" class="form__check">Без фактуры</label>
-                      <input type="checkbox" id="check8" class="form__checkbox" checked="">
-                      <label for="check8" class="form__check">Древесная</label>
-                    </div>
-                  </fieldset>
-                  <button type="submit" class="btn filter__btn">Найти</button>
-                </div>
-              </form>
-            </div>
-
-            <a href="#" class="banner">
-              <img src="img/images/banner.jpg" alt="Banner">
-            </a>
-            
-            <div class="sidebar__leaders">
-              <p class="sidebar__title">Лидеры продаж</p>
-              <div class="swiper-container sidebar__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide sidebar__slide">
-                    <a href="#" class="sidebar__link">
-                      <img src="img/images/img-1.jpg" alt="item 1">
-                      <span>Газобетонные и стеновые блоки</span>
-                    </a>
-                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
-                    <a href="#" class="btn sidebar__btn">В корзину</a>
-                  </div>
-                  <div class="swiper-slide sidebar__slide">
-                    <a href="#" class="sidebar__link">
-                      <img src="img/images/img-2.jpg" alt="item 1">
-                      <span>Портландцемент сульфатостойкий М500 Д20 50 кг</span>
-                    </a>
-                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
-                    <a href="#" class="btn sidebar__btn">В корзину</a>
-                  </div>
-                  <div class="swiper-slide sidebar__slide">
-                    <a href="#" class="sidebar__link">
-                      <img src="img/images/img-3.jpg" alt="item 1">
-                      <span>Кирпич строительный Липки полнотелый, 250х120х65</span>
-                    </a>
-                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
-                    <a href="#" class="btn sidebar__btn">В корзину</a>
-                  </div>
-                  <div class="swiper-slide sidebar__slide">
-                    <a href="#" class="sidebar__link">
-                      <img src="img/images/img-1.jpg" alt="item 1">
-                      <span>Газобетонные и стеновые блоки</span>
-                    </a>
-                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
-                    <a href="#" class="btn sidebar__btn">В корзину</a>
-                  </div>
-                  <div class="swiper-slide sidebar__slide">
-                    <a href="#" class="sidebar__link">
-                      <img src="img/images/img-2.jpg" alt="item 1">
-                      <span>Портландцемент сульфатостойкий М500 Д20 50 кг</span>
-                    </a>
-                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
-                    <a href="#" class="btn sidebar__btn">В корзину</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-prev sidebar__prev"></div>
-              <div class="swiper-button-next sidebar__next"></div>
-            </div>
-          </aside>
-
           <div class="columns__content">
-            <nav class="breadcrumbs">
-              <a href="index.html" class="breadcrumbs__link breadcrumbs__link--main"></a>
-              <a href="#" class="breadcrumbs__link">Категория</a>
-              <span class="breadcrumbs__link">Товар</span>
-            </nav>
-            
-            <section class="catalog">
-              <h1 class="title-2">Декоративные и отделочные материалы</h1>
-              <ul class="catalog__list">
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-1.jpg" alt="item 1">
-                    <span>Газобетонные и стеновые блоки</span>
-                  </a>
-                </li>
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-2.jpg" alt="item 2">
-                    <span>Водно-дисперсионные краски</span>
-                  </a>
-                </li>
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-3.jpg" alt="item 3">
-                    <span>Готовая шпаклевка</span>
-                  </a>
-                </li>
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-1.jpg" alt="item 4">
-                    <span>Газобетонные и стеновые блоки</span>
-                  </a>
-                </li>
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-2.jpg" alt="item 5">
-                    <span>Водно-дисперсионные краски</span>
-                  </a>
-                </li>
-                <li class="catalog__item">
-                  <a href="#" class="catalog__link">
-                    <img src="img/images/img-4.jpg" alt="item 6">
-                    <span>Грунтовки</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
-            
-            <div class="sort">
-              <div class="sort__block">
-                <span>Сортировать по:</span>
-                <a href="#" class="sort__link sort__link--active">Цене</a>
-                <a href="#" class="sort__link">Наименованию товара</a>
-              </div>
-              <div class="sort__block sort__block--type">
-                <span>Вид каталога:</span>
-                <button type="button" class="sort__btn sort__btn--plate sort__btn--active">
-                  <svg x="0px" y="0px" width="267.574px" height="267.573px" viewBox="0 0 267.574 267.573" style="enable-background:new 0 0 267.574 267.573;" xml:space="preserve">
-                    <path d="M74.198,1.534H8.818C3.954,1.534,0,5.473,0,10.343v65.461c0,4.873,3.954,8.818,8.818,8.818h65.38 c4.891,0,8.83-3.945,8.83-8.818V10.343C83.022,5.467,79.089,1.534,74.198,1.534z"></path>
-                    <path d="M74.198,91.474H8.818c-4.864,0-8.818,3.939-8.818,8.81v65.477c0,4.869,3.954,8.814,8.818,8.814h65.38
-                      c4.891,0,8.83-3.945,8.83-8.814v-65.477C83.022,95.413,79.089,91.474,74.198,91.474z"></path>
-                    <path d="M74.198,184.458H8.818c-4.864,0-8.818,3.939-8.818,8.81v65.482c0,4.869,3.954,8.814,8.818,8.814h65.38 c4.891,0,8.83-3.945,8.83-8.814v-65.482C83.022,188.397,79.089,184.458,74.198,184.458z"></path>
-                    <path d="M166.483,0.009h-65.395c-4.864,0-8.818,3.945-8.818,8.815v65.47c0,4.87,3.954,8.815,8.818,8.815h65.395 c4.864,0,8.821-3.945,8.821-8.815V8.818C175.292,3.948,171.347,0.009,166.483,0.009z"></path>
-                    <path d="M166.483,89.949h-65.395c-4.864,0-8.818,3.948-8.818,8.818v65.462c0,4.869,3.954,8.814,8.818,8.814h65.395 c4.864,0,8.821-3.945,8.821-8.814V98.767C175.292,93.897,171.347,89.949,166.483,89.949z"></path>
-                    <path d="M166.483,182.939h-65.395c-4.864,0-8.818,3.944-8.818,8.814v65.465c0,4.875,3.954,8.814,8.818,8.814h65.395 c4.864,0,8.821-3.939,8.821-8.814v-65.465C175.292,186.884,171.347,182.939,166.483,182.939z"></path>
-                    <path d="M258.747,0.015h-65.374c-4.864,0-8.821,3.948-8.821,8.818v65.461c0,4.876,3.957,8.815,8.821,8.815h65.38 c4.864,0,8.821-3.939,8.821-8.815V8.833C267.562,3.954,263.611,0.015,258.747,0.015z"></path>
-                    <path d="M258.747,89.967h-65.374c-4.864,0-8.821,3.942-8.821,8.818v65.461c0,4.87,3.957,8.809,8.821,8.809h65.38 c4.864,0,8.821-3.938,8.821-8.809V98.785C267.562,93.909,263.611,89.967,258.747,89.967z"></path>
-                    <path d="M258.747,182.945h-65.374c-4.864,0-8.821,3.945-8.821,8.82v65.465c0,4.869,3.957,8.809,8.821,8.809h65.38 c4.864,0,8.821-3.939,8.821-8.809v-65.465C267.562,186.891,263.611,182.945,258.747,182.945z"></path>
-                  </svg>
-                </button>
-                <button type="button" class="sort__btn sort__btn--table">
-                  <svg x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                    <rect y="2" width="50" height="4"></rect>
-                    <rect y="16" width="50" height="4"></rect>
-                    <rect y="30" width="50" height="4"></rect>
-                    <rect y="44" width="50" height="4"></rect>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <section class="card">
+              <div class="card__wrap">
+                <div class="card__slider">
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide card__slide">
+                        <a data-fancybox="gallery" href="img/images/card-big.jpg" class="card__pic">
+                          <img src="img/images/card-big.jpg" alt="Название товара">
+                        </a>
+                      </div>
+                      <div class="swiper-slide card__slide">
+                        <a data-fancybox="gallery" href="img/images/card-1.jpg" class="card__pic">
+                          <img src="img/images/card-1.jpg" alt="Название товара">
+                        </a>
+                      </div>
+                      <div class="swiper-slide card__slide">
+                        <a data-fancybox="gallery" href="img/images/card-2.jpg" class="card__pic">
+                          <img src="img/images/card-2.jpg" alt="Название товара">
+                        </a>
+                      </div>
+                      <div class="swiper-slide card__slide">
+                        <a data-fancybox="gallery" href="img/images/card-3.jpg" class="card__pic">
+                          <img src="img/images/card-3.jpg" alt="Название товара">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide card__thumb">
+                        <img src="img/images/card-big.jpg" alt="Название товара">
+                      </div>
+                      <div class="swiper-slide card__thumb">
+                        <img src="img/images/card-1.jpg" alt="Название товара">
+                      </div>
+                      <div class="swiper-slide card__thumb">
+                        <img src="img/images/card-2.jpg" alt="Название товара">
+                      </div>
+                      <div class="swiper-slide card__thumb">
+                        <img src="img/images/card-3.jpg" alt="Название товара">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev card__prev"></div>
+                  <div class="swiper-button-next card__next"></div>
+                </div>
 
-            <section class="hit">
-              <ul class="hit__list hit__catalog">
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-1.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Цементно-песчаная смесь "Forman" М150, 40 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>997<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a data-fancybox="" data-src="#click" href="javascript:;" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-2.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Портландцемент сульфатостойкий М500 Д20 50 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>359<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-3.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>13<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-4.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>4200<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-1.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Цементно-песчаная смесь "Forman" М150, 40 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>997<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a data-fancybox="" data-src="#click" href="javascript:;" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-2.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Портландцемент сульфатостойкий М500 Д20 50 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>359<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-3.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>13<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-4.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>4200<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-1.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Цементно-песчаная смесь "Forman" М150, 40 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>997<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a data-fancybox="" data-src="#click" href="javascript:;" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-2.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Портландцемент сульфатостойкий М500 Д20 50 кг</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>359<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-3.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>13<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-                <li class="hit__item">
-                  <p class="hit__articul">Арт.: 892378</p>
-                  <a href="#" class="hit__link">
-                    <figure class="hit__img">
-                      <img src="img/images/catalog-4.jpg" alt="item">
-                    </figure>
-                    <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
-                  </a>
-                  <form action="#" class="hit__form">
-                    <div class="hit__info">
-                      <p class="hit__price"><span>4200<i>руб.</i></span></p>
-                      <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
-                      <a href="#" class="btn hit__cart">В корзину</a>
-                    </div>
-                    <div class="hit__click">
-                      <div class="hit__value">
-                        <button type="button" class="hit__btn hit__btn--minus">-</button>
-                        <input type="text" class="hit__input" value="1">
-                        <button type="button" class="hit__btn hit__btn--plus">+</button>
-                      </div>
-                      <a href="#" class="btn hit__click-btn">Купить в один клик</a>
-                    </div>
-                  </form>
-                </li>
-              </ul>
+                <div class="card__info">
+                  <p class="card__articul"><span>Арт.: 892378</span></p>
+                  <h1 class="title-2">Водоотводный лоток Gidrolica пластиковый с пластиковой решеткой 1000х115х95 мм</h1>
+                  <p class="card__brand">Производитель: <a href="#">Tikkurila</a></p>
+                  <div class="social">
+                    <span>поделиться товаром:</span>
+                    <a href="#" class="social__link">
+                      <img src="img/icons/icon-vk.png" alt="VKontakte">
+                    </a>
+                    <a href="#" class="social__link">
+                      <img src="img/icons/icon-fb.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social__link">
+                      <img src="img/icons/icon-tw.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="social__link">
+                      <img src="img/icons/icon-ok.png" alt="Odnoklassniki">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tabs" id="tabs">
+                <ul class="tabs__title">
+                  <li class="tabs__name"><a href="#tabs-1">Описание товара</a></li>
+                  <li class="tabs__name"><a href="#tabs-2">характеристики</a></li>
+                  <li class="tabs__name"><a href="#tabs-3">доставка</a></li>
+                  <li class="tabs__name"><a href="#tabs-4">Оплата</a></li>
+                </ul>
+                <div class="tabs__field" id="tabs-1">
+                  <p class="title-3">Описание товара</p>
+                  <p>Саморез по металлу 4,2х13 мм с пресс-шайбой острый Саморезы с прессшайбой по металлу до 0,9мм 4,2*13 мм предназначены для крепления листового металла толщиной до 0,9мм без предварительного сверления к металлическому, деревянному, пластиковому основанию. Головка самореза острого с прессшайбой обеспечивает более надежное крепление благодаря большой площади соприкосновения с прикрепляемой деталью.</p>
+                  <ul>
+                    <li>Головка: полусферическая с пресс-шайбой, шлиц «Phillips №2»</li>
+                    <li>Резьба: частая</li>
+                    <li>Наконечник: острый</li>
+                    <li>Покрытие: белый цинк</li>
+                    <li>Материал: сталь С1022</li>
+                    <li>Применение: металлический профиль до 0,9 мм</li>
+                  </ul>
+                  <p class="title-3">Характеристики</p>
+                  <table>
+                    <tr>
+                      <td><span>Диаметр</span><i></i></td>
+                      <td>4,2 мм</td>
+                    </tr>
+                    <tr>
+                      <td><span>Материал</span><i></i></td>
+                      <td>Сталь</td>
+                    </tr>
+                    <tr>
+                      <td><span>Наконечник</span><i></i></td>
+                      <td>Острый</td>
+                    </tr>
+                    <tr>
+                      <td><span>Пресс-шайба</span><i></i></td>
+                      <td>Да</td>
+                    </tr>
+                    <tr>
+                      <td><span>Цвет</span><i></i></td>
+                      <td>Неокрашенный</td>
+                    </tr>
+                    <tr>
+                      <td><span>Длина</span><i></i></td>
+                      <td>13 мм</td>
+                    </tr>
+                    <tr>
+                      <td><span>Покрытие</span><i></i></td>
+                      <td>Белый цинк</td>
+                    </tr>
+                    <tr>
+                      <td><span>Резьба</span><i></i></td>
+                      <td>Частая</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="tabs__field" id="tabs-2">
+                  характеристики
+                </div>
+                <div class="tabs__field" id="tabs-3">
+                  доставка
+                </div>
+                <div class="tabs__field" id="tabs-4">
+                  Оплата
+                </div>
+              </div>
             </section>
             
-            <div class="columns__wrap">
-              <a href="#" class="link-more">Загрузить еще</a>
-              <nav class="pages">
-                <a href="#" class="page__text">Назад</a>
-                <a href="#" class="pages__link">1</a>
-                <a href="#" class="pages__link pages__link--active">2</a>
-                <a href="#" class="pages__link">3</a>
-                <span>...</span>
-                <a href="#" class="pages__link">7</a>
-                <a href="#" class="page__text">Вперед</a>
-              </nav>
-            </div>
-            
             <section class="hit">
-              <p class="title-2">Вы недавно смотрели</p>
+              <p class="title-2">С этим товаром покупают</p>
               <div class="swiper-container hit__slider hit__slider1">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide hit__slide">
@@ -870,6 +507,136 @@
               <div class="swiper-button-next hit__next1"></div>
             </section>
             
+            <section class="hit">
+              <p class="title-2">Вы недавно смотрели</p>
+              <div class="swiper-container hit__slider hit__slider2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide hit__slide">
+                    <p class="hit__articul">Арт.: 892378</p>
+                    <a href="#" class="hit__link">
+                      <figure class="hit__img">
+                        <img src="img/images/catalog-1.jpg" alt="item">
+                      </figure>
+                      <p class="hit__title">Цементно-песчаная смесь "Forman" М150, 40 кг</p>
+                    </a>
+                    <form action="#" class="hit__form">
+                      <div class="hit__info">
+                        <p class="hit__price"><span>997<i>руб.</i></span></p>
+                        <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
+                        <a href="#" class="btn hit__cart">В корзину</a>
+                      </div>
+                      <div class="hit__click">
+                        <div class="hit__value">
+                          <button type="button" class="hit__btn hit__btn--minus">-</button>
+                          <input type="text" class="hit__input" value="1">
+                          <button type="button" class="hit__btn hit__btn--plus">+</button>
+                        </div>
+                        <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="swiper-slide hit__slide">
+                    <p class="hit__articul">Арт.: 892378</p>
+                    <a href="#" class="hit__link">
+                      <figure class="hit__img">
+                        <img src="img/images/catalog-2.jpg" alt="item">
+                      </figure>
+                      <p class="hit__title">Портландцемент сульфатостойкий М500 Д20 50 кг</p>
+                    </a>
+                    <form action="#" class="hit__form">
+                      <div class="hit__info">
+                        <p class="hit__price"><span>359<i>руб.</i></span></p>
+                        <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
+                        <a href="#" class="btn hit__cart">В корзину</a>
+                      </div>
+                      <div class="hit__click">
+                        <div class="hit__value">
+                          <button type="button" class="hit__btn hit__btn--minus">-</button>
+                          <input type="text" class="hit__input" value="1">
+                          <button type="button" class="hit__btn hit__btn--plus">+</button>
+                        </div>
+                        <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="swiper-slide hit__slide">
+                    <p class="hit__articul">Арт.: 892378</p>
+                    <a href="#" class="hit__link">
+                      <figure class="hit__img">
+                        <img src="img/images/catalog-3.jpg" alt="item">
+                      </figure>
+                      <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
+                    </a>
+                    <form action="#" class="hit__form">
+                      <div class="hit__info">
+                        <p class="hit__price"><span>13<i>руб.</i></span></p>
+                        <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
+                        <a href="#" class="btn hit__cart">В корзину</a>
+                      </div>
+                      <div class="hit__click">
+                        <div class="hit__value">
+                          <button type="button" class="hit__btn hit__btn--minus">-</button>
+                          <input type="text" class="hit__input" value="1">
+                          <button type="button" class="hit__btn hit__btn--plus">+</button>
+                        </div>
+                        <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="swiper-slide hit__slide">
+                    <p class="hit__articul">Арт.: 892378</p>
+                    <a href="#" class="hit__link">
+                      <figure class="hit__img">
+                        <img src="img/images/catalog-4.jpg" alt="item">
+                      </figure>
+                      <p class="hit__title">Кирпич строительный Липки полнотелый, 250х120х65</p>
+                    </a>
+                    <form action="#" class="hit__form">
+                      <div class="hit__info">
+                        <p class="hit__price"><span>4200<i>руб.</i></span></p>
+                        <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
+                        <a href="#" class="btn hit__cart">В корзину</a>
+                      </div>
+                      <div class="hit__click">
+                        <div class="hit__value">
+                          <button type="button" class="hit__btn hit__btn--minus">-</button>
+                          <input type="text" class="hit__input" value="1">
+                          <button type="button" class="hit__btn hit__btn--plus">+</button>
+                        </div>
+                        <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="swiper-slide hit__slide">
+                    <p class="hit__articul">Арт.: 892378</p>
+                    <a href="#" class="hit__link">
+                      <figure class="hit__img">
+                        <img src="img/images/catalog-2.jpg" alt="item">
+                      </figure>
+                      <p class="hit__title">Портландцемент сульфатостойкий М500 Д20 50 кг</p>
+                    </a>
+                    <form action="#" class="hit__form">
+                      <div class="hit__info">
+                        <p class="hit__price"><span>359<i>руб.</i></span></p>
+                        <p class="hit__brand">Производитель: <a href="#">Tikkurila</a></p>
+                        <a href="#" class="btn hit__cart">В корзину</a>
+                      </div>
+                      <div class="hit__click">
+                        <div class="hit__value">
+                          <button type="button" class="hit__btn hit__btn--minus">-</button>
+                          <input type="text" class="hit__input" value="1">
+                          <button type="button" class="hit__btn hit__btn--plus">+</button>
+                        </div>
+                        <a href="#" class="btn hit__click-btn">Купить в один клик</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev hit__prev2"></div>
+              <div class="swiper-button-next hit__next2"></div>
+            </section>
+            
             <section class="brand">
               <p class="title-2">Производители</p>
               <div class="swiper-container brand__slider">
@@ -925,6 +692,79 @@
               <div class="swiper-button-next brand__next"></div>
             </section>
           </div>
+          
+          <aside class="sidebar">
+            <form action="#" class="basket">
+              <div class="basket__wrap">
+                <div class="basket__number">
+                  <input type="text" class="basket__value" value="15">
+                  <button type="button" class="basket__btn basket__btn--plus">+</button>
+                  <button type="button" class="basket__btn basket__btn--minus">-</button>
+                </div>
+                <p class="basket__price"><span>10 999<i>руб.</i></span></p>
+              </div>
+              <a href="#" class="btn basket__buy">В корзину</a>
+              <a href="#" class="basket__click">Купить в один клик</a>
+              <div class="basket__icons">
+                <a href="#" class="basket__icon basket__icon--like">в закладки</a>
+                <a href="#" class="basket__icon basket__icon--compare">сравнить</a>
+              </div>
+            </form>
+
+            <a href="#" class="banner">
+              <img src="img/images/banner.jpg" alt="Banner">
+            </a>
+            
+            <div class="sidebar__leaders">
+              <p class="sidebar__title">Лидеры продаж</p>
+              <div class="swiper-container sidebar__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide sidebar__slide">
+                    <a href="#" class="sidebar__link">
+                      <img src="img/images/img-1.jpg" alt="item 1">
+                      <span>Газобетонные и стеновые блоки</span>
+                    </a>
+                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
+                    <a href="#" class="btn sidebar__btn">В корзину</a>
+                  </div>
+                  <div class="swiper-slide sidebar__slide">
+                    <a href="#" class="sidebar__link">
+                      <img src="img/images/img-2.jpg" alt="item 1">
+                      <span>Портландцемент сульфатостойкий М500 Д20 50 кг</span>
+                    </a>
+                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
+                    <a href="#" class="btn sidebar__btn">В корзину</a>
+                  </div>
+                  <div class="swiper-slide sidebar__slide">
+                    <a href="#" class="sidebar__link">
+                      <img src="img/images/img-3.jpg" alt="item 1">
+                      <span>Кирпич строительный Липки полнотелый, 250х120х65</span>
+                    </a>
+                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
+                    <a href="#" class="btn sidebar__btn">В корзину</a>
+                  </div>
+                  <div class="swiper-slide sidebar__slide">
+                    <a href="#" class="sidebar__link">
+                      <img src="img/images/img-1.jpg" alt="item 1">
+                      <span>Газобетонные и стеновые блоки</span>
+                    </a>
+                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
+                    <a href="#" class="btn sidebar__btn">В корзину</a>
+                  </div>
+                  <div class="swiper-slide sidebar__slide">
+                    <a href="#" class="sidebar__link">
+                      <img src="img/images/img-2.jpg" alt="item 1">
+                      <span>Портландцемент сульфатостойкий М500 Д20 50 кг</span>
+                    </a>
+                    <p class="sidebar__price"><span>456<i>руб.</i></span></p>
+                    <a href="#" class="btn sidebar__btn">В корзину</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev sidebar__prev"></div>
+              <div class="swiper-button-next sidebar__next"></div>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -1133,23 +973,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="js/range-slider.js"></script>
-  
-  <!-- Filter show/hide -->
-  <script>
-    $('.filter__option').click(function() {
-      $(this).next().slideToggle();
-      $(this).toggleClass('filter__option--open');
-    });
-    
-    if (window.innerWidth < 1022) {
-      $('.filter__title').click(function() {
-        $('.filter__form').slideToggle();
-        $('.breadcrumbs').toggleClass('breadcrumbs--top');
-      });
-    }
-  </script>
   
   <!-- Sliders -->
   <script>
@@ -1157,6 +980,41 @@
       navigation: {
         nextEl: '.hit__next1',
         prevEl: '.hit__prev1',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+      breakpoints: 
+				{
+					1410: 
+					{
+						slidesPerView: 4,
+					},
+          1278:
+          {
+            slidesPerView: 3,
+          },
+          1022:
+          {
+            slidesPerView: 3,
+          },
+          766:
+          {
+            slidesPerView: 2,
+          },
+          480:
+          {
+            slidesPerView: 1,
+          },
+        },
+    });
+    
+    var mySwiper = new Swiper ('.hit__slider2', {
+      navigation: {
+        nextEl: '.hit__next2',
+        prevEl: '.hit__prev2',
       },
       simulateTouch: false,
       preventClicks: false,
@@ -1235,30 +1093,29 @@
       slidesPerView: 3,
       spaceBetween: 10,
     });
+    
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
   </script>
   
-  <!-- Catalog view switcher -->
+  <!-- Tabs -->
   <script>
-    $('.sort__btn--table').click(function(e) {
-      e.preventDefault();
-      $('.sort__btn--plate').removeClass('sort__btn--active');
-      $(this).addClass('sort__btn--active');
-      $('.hit__catalog').addClass('hit__list--table');
-    });
-    $('.sort__btn--plate').click(function(e) {
-      e.preventDefault();
-      $('.sort__btn--table').removeClass('sort__btn--active');
-      $(this).addClass('sort__btn--active');
-      $('.hit__catalog').removeClass('hit__list--table');
-    });
-  </script>
-  
-  <!-- Catalog button -->
-  <script>
-    $('.header__button').click(function(evt) {
-      evt.preventDefault;
-      evt.stopPropagation();
-      $('.menu--internal').slideToggle();
+    $(function() {
+      $("#tabs").tabs();
     });
   </script>
 </body>
