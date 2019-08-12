@@ -3446,10 +3446,25 @@ a.breadcrumbs__link:active {
   .basket {
     top: 1330px;
   }
+  .basket__buy,
+  .basket__click,
   .card__slider {
     width: 100%;
   }
   .tabs__field {
     padding: 15px;
+  }
+  .card__slider .swiper-button-next {
+    right: 0;
+  }
+  .card__slider .swiper-button-prev {
+    left: 0;
+  }
+  .basket {
+    left: 15px;
+    right: 15px;
+    width: auto;
+    -webkit-transform: none;
+            transform: none;
   }
 }
