@@ -1,0 +1,113 @@
+.tabs {
+  margin-bottom: 40px;
+}
+
+.tabs__title {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  
+  .ui-tabs-active {
+    a {
+      color: #fff;
+      background-color: @hover;
+    }
+    &:first-child a {
+      background-image: url(../img/icons/file-white.svg);
+    }
+    &:nth-child(2) a {
+      background-image: url(../../img/icons/settings-white.svg);
+    }
+    &:nth-child(3) a {
+      background-image: url(../../img/icons/shipped-white.svg);
+    }
+    &:nth-child(4) a {
+      background-image: url(../../img/icons/coins-white.svg);
+    }
+  }
+}
+
+.tabs__name {
+  margin-right: 10px;
+  
+  a {
+    display: block;
+    padding: 15px 20px;
+    padding-left: 45px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+    border-radius: 5px 5px 0 0;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    background-size: 20px 20px;
+  }
+  
+  &:first-child a {
+    background-image: url(../img/icons/file.svg);
+  }
+  &:nth-child(2) a {
+    background-image: url(../../img/icons/settings.svg);
+  }
+  &:nth-child(3) a {
+    background-image: url(../../img/icons/shipped.svg);
+  }
+  &:nth-child(4) a {
+    background-image: url(../../img/icons/coins.svg);
+  }
+}
+
+.tabs__field {
+  padding: 10px 100px 20px 25px;
+  background-color: #f8f8f8;
+  border-radius: 0 5px 5px 5px;
+  
+  ul {
+    .reset();
+    list-style: none;
+    margin-bottom: 25px;
+    
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 30px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: @hover;
+      }
+    }
+  }
+  
+  table {
+    border-collapse: collapse;
+    
+    td {
+      height: 32px;
+    }
+    
+    td:first-child {
+      width: 390px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      i {
+        flex-grow: 1;
+        height: 1px;
+        margin-left: 30px;
+        margin-right: 10px;
+        background-color: rgb(220, 220, 220);
+      }
+    }
+  }
+}

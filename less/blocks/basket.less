@@ -1,0 +1,143 @@
+.basket {
+  padding: 30px;
+  margin-bottom: 25px;
+  background-color: #f8f8f8;
+}
+
+.basket__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.basket__number {
+  position: relative;
+}
+
+.basket__value {
+  width: 60px;
+  height: 50px;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
+}
+
+.basket__btn {
+  position: absolute;
+  left: 100%;
+  width: 25px;
+  height: 25px;
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  .transition();
+  
+  &--plus {
+    top: 0;
+  }
+  &--minus {
+    bottom: 0;
+  }
+  &:hover,
+  &:active {
+    background-color: @yellow;
+    .transition();
+  }
+}
+
+.basket__price {
+  color: #e24d0b;
+  font-weight: 700;
+  line-height: 1;
+  
+  span {
+    position: relative;
+    padding-right: 45px;
+    font-size: 32px;
+  }
+  i {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-style: normal;
+    font-size: 16px;
+  }
+}
+
+.basket__buy {
+  margin-bottom: 10px;
+  padding-left: 35px;
+  background-image: url(../img/icons/shopping-cart.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: left 65px center;
+}
+
+.basket__click {
+  width: 255px;
+  height: 55px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid rgb(226, 226, 226);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @yellow;
+    border-color: @yellow;
+    .transition();
+  }
+}
+
+.basket__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket__icon {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #e24d0b;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--like::before {
+    background-image: url(../img/icons/star-red.svg);
+  }
+  &--compare::before {
+    background-image: url(../img/icons/justice-red.svg);
+  }
+}
