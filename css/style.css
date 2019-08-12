@@ -2479,7 +2479,9 @@ a.breadcrumbs__link:active {
   transition: ease-out 0.3s;
 }
 .basket {
-  padding: 30px;
+  padding: 25px 30px;
+  padding-bottom: 35px;
+  margin-top: 25px;
   margin-bottom: 25px;
   background-color: #f8f8f8;
 }
@@ -2494,7 +2496,8 @@ a.breadcrumbs__link:active {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #ececec;
 }
 .basket__number {
@@ -2564,7 +2567,7 @@ a.breadcrumbs__link:active {
 .basket__click {
   width: 255px;
   height: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2661,6 +2664,12 @@ a.breadcrumbs__link:active {
 }
 .card__info {
   width: calc(100% - 460px);
+  padding-top: 30px;
+}
+.card__info .title-2 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  line-height: 30px;
 }
 .gallery-top {
   height: calc(100% - 85px);
@@ -2693,6 +2702,7 @@ a.breadcrumbs__link:active {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 .gallery-thumbs .swiper-slide img {
   display: block;
@@ -2733,6 +2743,8 @@ a.breadcrumbs__link:active {
   background-color: #f1f1f1;
 }
 .card__brand {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 14px;
 }
 .card__brand a {
@@ -2794,7 +2806,7 @@ a.breadcrumbs__link:active {
 }
 .tabs__name a {
   display: block;
-  padding: 15px 20px;
+  padding: 20px 25px;
   padding-left: 45px;
   font-size: 12px;
   font-weight: 700;
@@ -2819,7 +2831,7 @@ a.breadcrumbs__link:active {
   background-image: url(../../img/icons/coins.svg);
 }
 .tabs__field {
-  padding: 10px 100px 20px 25px;
+  padding: 15px 60px 20px 30px;
   background-color: #f8f8f8;
   border-radius: 0 5px 5px 5px;
 }
@@ -2827,11 +2839,11 @@ a.breadcrumbs__link:active {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .tabs__field ul li {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding-left: 30px;
 }
 .tabs__field ul li::before {
@@ -2911,6 +2923,12 @@ a.breadcrumbs__link:active {
   .sidebar__leaders .swiper-button-next,
   .sidebar__leaders .swiper-button-prev {
     width: 265px;
+  }
+  .basket {
+    padding: 20px 10px;
+  }
+  .basket__wrap {
+    padding-top: 0;
   }
 }
 @media (max-width: 1278px) {
@@ -2995,6 +3013,13 @@ a.breadcrumbs__link:active {
   }
   .hit__list--table .hit__articul {
     margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .tabs__name {
+    margin-right: 5px;
+  }
+  .social span {
+    display: block;
     margin-bottom: 10px;
   }
 }
@@ -3137,6 +3162,19 @@ a.breadcrumbs__link:active {
   .breadcrumbs--top {
     margin-top: 20px;
   }
+  .basket {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 860px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 280px;
+  }
+  .tabs {
+    margin-top: 350px;
+  }
 }
 @media (max-width: 766px) {
   .nav__list {
@@ -3260,6 +3298,60 @@ a.breadcrumbs__link:active {
   .filter__title {
     top: 460px;
   }
+  .card__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .card__slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__info {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  .breadcrumbs--card {
+    margin-top: 30px;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name {
+    margin-right: 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+  }
+  .tabs__field {
+    padding-right: 30px;
+  }
+  .tabs__field table {
+    width: 100%;
+  }
+  .tabs__field table td {
+    width: 50%;
+  }
+  .tabs__field table td:first-child {
+    width: 100%;
+  }
+  .tabs__field table td:first-child i {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .basket__buy,
+  .basket__click {
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basket {
+    top: 1260px;
+  }
 }
 @media (max-width: 480px) {
   .footer__wrap .nav,
@@ -3350,5 +3442,14 @@ a.breadcrumbs__link:active {
   }
   .breadcrumbs {
     margin-top: 20px;
+  }
+  .basket {
+    top: 1330px;
+  }
+  .card__slider {
+    width: 100%;
+  }
+  .tabs__field {
+    padding: 15px;
   }
 }
