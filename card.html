@@ -233,7 +233,7 @@
   <main>
     <div class="columns">
       <div class="wrapper">
-        <nav class="breadcrumbs">
+        <nav class="breadcrumbs breadcrumbs--card">
           <a href="index.html" class="breadcrumbs__link breadcrumbs__link--main"></a>
           <a href="#" class="breadcrumbs__link">Категория</a>
           <a href="#" class="breadcrumbs__link">Подкатегория</a>
@@ -1116,6 +1116,15 @@
   <script>
     $(function() {
       $("#tabs").tabs();
+    });
+  </script>
+  
+  <!-- Catalog button -->
+  <script>
+    $('.header__button').click(function(evt) {
+      evt.preventDefault;
+      evt.stopPropagation();
+      $('.menu--internal').slideToggle();
     });
   </script>
 </body>
